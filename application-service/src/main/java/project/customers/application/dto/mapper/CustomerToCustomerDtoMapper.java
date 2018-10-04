@@ -7,7 +7,6 @@ import javax.inject.Named;
 import javax.inject.Singleton;
 
 import project.customers.application.dto.CustomerDto;
-import project.customers.application.dto.UpdateCustomerDto;
 import project.customers.domain.entity.Customer;
 
 @Named
@@ -49,21 +48,6 @@ public class CustomerToCustomerDtoMapper {
 		return lstCustomer;
 	}
 
-	public Customer mergeDtoToCustomer(UpdateCustomerDto dto, Customer customer) {
 
-		if (dto.getId() == 0) {
-
-			customer.setId(dto.getId());
-		}
-
-		if (dto.getFirstName() != null) {
-			customer.setFirstName(dto.getFirstName());
-		}
-
-		if (dto.getLastName() != null) {
-			customer.setLastName(dto.getLastName());
-		}
-		return customer;
-	}
 
 }
