@@ -33,12 +33,12 @@ shadowJar {
 
 runShadow {
   //args 'server'
-  args  'server', 'src/main/resources/banking.yml'
+  args  'server', 'src/main/resources/config.yml'
 }
 
 run {
     //args 'db', 'migrate', 'src/main/resources/bankingDesa.yml'
-    args 'server', 'src/main/resources/banking.yml'
+    args 'server', 'src/main/resources/config.yml'
 
 }
 

@@ -79,3 +79,13 @@ WARN   [21:01:18.468] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator -  HHH000342: 
 INFO   [21:01:18.515] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect 
 INFO   [21:01:18.530] [main] o.h.e.j.e.i.LobCreatorBuilderImpl -  HHH000422: Disabling contextual LOB creation as connection was null 
 INFO   [21:01:18.530] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1aeeb56 
+INFO   [21:13:43.479] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:13:43.479] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:13:43.479] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:13:43.510] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:13:43.526] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:13:43.729] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:13:43.729] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:13:43.744] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:13:44.828] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:13:45.184] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
