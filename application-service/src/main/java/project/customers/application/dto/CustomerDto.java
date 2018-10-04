@@ -1,11 +1,7 @@
 package project.customers.application.dto;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-
 import project.common.application.dto.RequestBaseDto;
-import project.customers.application.dto.deserializer.CustomerDtoDeserializer;
 
-@JsonDeserialize(using = CustomerDtoDeserializer.class)
 public class CustomerDto extends RequestBaseDto {
 
 	private long id = 0;

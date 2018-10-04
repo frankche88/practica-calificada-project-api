@@ -7,7 +7,6 @@ import project.project.application.dto.ProjectDto;
 import project.security.domain.entity.User;
 
 
-//@JsonDeserialize(using = ProjectInitDtoDeserializer.class)
 public class ProjectInitDto extends RequestBaseDto {
 	private ProjectDto project;
 	private CustomerDto customer;
