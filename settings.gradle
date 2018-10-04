@@ -1,0 +1,2 @@
+include 'project-domain','application-service','infrastructure-hibernate', 'application-dropwizard'
+rootProject.name = 'practica-calificada-project-api'

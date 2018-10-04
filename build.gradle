@@ -1,0 +1,19 @@
+
+
+
+
+description = """banking-api-clean-architecture"""
+
+allprojects {
+    repositories {
+        mavenCentral() 
+    }
+}
+
+subprojects {
+    group = 'banking'
+	version = '0.0.1-SNAPSHOT'
+	
+	
+		
+}
