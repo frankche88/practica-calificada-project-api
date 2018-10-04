@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="project.accounts.domain.entity">
+	<class name="Project" table="project">
+        <id name="id" column="project_id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" />
+        <component name="budget" class="project.accounts.domain.entity.Budget">
+	        <property name="value" column="budget"/>
+	        <property name="currency" column="currency"/>
+	    </component>
+        <many-to-one name="customer" class="project.customers.domain.entity.Customer" column="customer_id" not-null="true"/>
+    </class> 
+</hibernate-mapping>

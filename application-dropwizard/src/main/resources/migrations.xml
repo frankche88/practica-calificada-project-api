@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+	<changeSet id="1" author="frankche88">
+		<createTable tableName="customer">
+			<column name="customer_id" type="bigint" autoIncrement="true" defaultValueSequenceNext="customer_id_seq"
+				startWith="100">
+				<constraints primaryKey="true" nullable="false"  primaryKeyName ="pk_customer"/>
+			</column>
+			<column name="first_name" type="varchar(50)">
+				<constraints nullable="false" />
+			</column>
+			<column name="last_name" type="varchar(50)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+		<createIndex indexName="IX_customer_last_first_name"
+			tableName="customer">
+			<column name="first_name" type="varchar(50)" />
+			<column name="last_name" type="varchar(50)" />
+		</createIndex>
+	</changeSet>
+
+	<changeSet id="2" author="frankche88">
+		<createTable tableName="project">
+			<column name="project_id" type="bigint" defaultValueSequenceNext="project_id_seq"
+				autoIncrement="true" startWith="100">
+				<constraints primaryKey="true" nullable="false" primaryKeyName ="pk_project"/>
+			</column>
+			<column name="name" type="varchar(50)">
+				<constraints nullable="false" />
+			</column>
+			<column name="budget" type="DECIMAL(12, 2)">
+				<constraints nullable="false" />
+			</column>
+			<column name="currency" type="varchar(50)">
+				<constraints nullable="false" />
+			</column>
+			<column name="customer_id" type="bigint">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+		<createIndex indexName="IX_project_customer_id"
+			tableName="project">
+			<column name="customer_id" type="varchar(50)" />
+		</createIndex>
+		<createIndex indexName="UQ_project_number"
+			tableName="project" unique="true">
+			<column name="name" type="varchar(50)" />
+		</createIndex>
+		<addForeignKeyConstraint
+			baseColumnNames="customer_id" baseTableName="project"
+			constraintName="FK_project_customer_id"
+			referencedColumnNames="customer_id" referencedTableName="customer" />
+	</changeSet>
+
+	<changeSet id="3" author="frankche88">
+		<createTable tableName="users">
+			<column name="username" type="varchar(45)">
+				<constraints primaryKey="true" nullable="false" primaryKeyName ="pk_users"/>
+			</column>
+			<column name="password" type="varchar(60)">
+				<constraints nullable="false" />
+			</column>
+			<column name="email" type="varchar(60)">
+			</column>
+		</createTable>
+	</changeSet>
+
+	
+
+
+
+
+
+
+</databaseChangeLog>

@@ -1,0 +1,81 @@
+INFO   [20:59:58.927] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [20:59:58.927] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [20:59:58.927] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [20:59:58.958] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [20:59:58.974] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [20:59:59.193] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [20:59:59.193] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [20:59:59.208] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:01:16.873] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:01:16.873] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:01:16.873] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:01:16.904] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:01:16.920] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:01:17.107] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:01:17.107] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:01:17.123] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:01:18.180] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+ERROR  [21:01:18.468] [main] o.a.t.j.p.ConnectionPool -  Unable to create initial connections of pool. 
+org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:150)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:483)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:418)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:87)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:691)
+	at io.dropwizard.hibernate.SessionFactoryFactory.buildSessionFactory(SessionFactoryFactory.java:96)
+	at io.dropwizard.hibernate.SessionFactoryFactory.build(SessionFactoryFactory.java:49)
+	at io.dropwizard.hibernate.SessionFactoryFactory.build(SessionFactoryFactory.java:39)
+	at io.dropwizard.hibernate.HibernateBundle.run(HibernateBundle.java:67)
+	at io.dropwizard.hibernate.HibernateBundle.run(HibernateBundle.java:19)
+	at io.dropwizard.setup.Bootstrap.run(Bootstrap.java:200)
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:42)
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:87)
+	at io.dropwizard.cli.Cli.run(Cli.java:78)
+	at io.dropwizard.Application.run(Application.java:93)
+	at project.ProjectApplication.main(ProjectApplication.java:19)
+Caused by: java.net.UnknownHostException: dbbanking.cwmjjsstjgmk.us-east-1.rds.amazonaws.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 46 common frames omitted
+WARN   [21:01:18.468] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator -  HHH000342: Could not obtain connection to query metadata : El intento de conexión falló. 
+INFO   [21:01:18.515] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect 
+INFO   [21:01:18.530] [main] o.h.e.j.e.i.LobCreatorBuilderImpl -  HHH000422: Disabling contextual LOB creation as connection was null 
+INFO   [21:01:18.530] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1aeeb56 
