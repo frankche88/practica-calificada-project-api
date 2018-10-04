@@ -22,7 +22,7 @@ import project.security.domain.entity.User;
 
 @Path("/api")
 @PermitAll
-@Api(value = "/api/signup")
+@Api(value = "/api/project")
 public class ProjectInitController {
 	
 
@@ -39,7 +39,7 @@ public class ProjectInitController {
 	private InitProjectDomainService InitProjectDomainService;
 
 	@POST
-	@Path("/bankTransfers")
+	@Path("/signup")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	@UnitOfWork
