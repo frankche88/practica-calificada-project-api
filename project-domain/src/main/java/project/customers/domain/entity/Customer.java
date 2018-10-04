@@ -8,7 +8,7 @@ public class Customer {
 	private long id;
     private String firstName;
     private String lastName;
-    private Set<Project> bankAccounts;
+    private Set<Project> projects;
     private String documentNumber;
     
 
@@ -51,12 +51,12 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public Set<Project> getBankAccounts() {
-        return bankAccounts;
+    public Set<Project> getProjects() {
+        return projects;
     }
 
-    public void setBankAccounts(Set<Project> bankAccounts) {
-        this.bankAccounts = bankAccounts;
+    public void setProjects(Set<Project> projects) {
+        this.projects = projects;
     }
 
 
@@ -64,7 +64,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", bankAccounts="
-                + bankAccounts + ", documentNumber=" + documentNumber + "]";
+                + projects + ", documentNumber=" + documentNumber + "]";
     }
     
     

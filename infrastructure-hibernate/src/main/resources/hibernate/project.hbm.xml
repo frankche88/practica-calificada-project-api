@@ -8,7 +8,7 @@
             <generator class="native"/>
         </id>
         <property name="name" column="name" />
-        <component name="budget" class="project.commons.domain.entity.Budget">
+        <component name="budget" class="project.common.application.Budget">
 	        <property name="value" column="budget"/>
 	        <property name="currency" column="currency"/>
 	    </component>

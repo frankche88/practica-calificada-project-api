@@ -31,8 +31,6 @@ public class HbnBundle extends HibernateBundle<ProjectConfiguration> {
 		
 		InputStream inputCustomer = ProjectHibernateRepository.class.getClassLoader().getResourceAsStream("hibernate/customer.hbm.xml");
 		
-		InputStream inputRole = ProjectHibernateRepository.class.getClassLoader().getResourceAsStream("hibernate/UserRoles.hbm.xml");
-		
 		InputStream inputUser = ProjectHibernateRepository.class.getClassLoader().getResourceAsStream("hibernate/Users.hbm.xml");
 		
 
@@ -40,7 +38,6 @@ public class HbnBundle extends HibernateBundle<ProjectConfiguration> {
 		configuration.addInputStream(inputCustomer);
 		
 		configuration.addInputStream(inputUser);
-		configuration.addInputStream(inputRole);
 		
     }
 

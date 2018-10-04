@@ -89,3 +89,85 @@ INFO   [21:13:43.729] [main] o.h.c.Environment -  HHH000206: hibernate.propertie
 INFO   [21:13:43.744] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
 INFO   [21:13:44.828] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
 INFO   [21:13:45.184] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:17:07.648] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:17:07.664] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:17:07.664] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:17:07.695] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:17:07.711] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:17:07.898] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:17:07.914] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:17:07.914] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:17:09.015] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:17:09.343] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:18:21.826] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:18:21.826] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:18:21.826] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:18:21.857] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:18:21.873] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:18:22.076] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:18:22.076] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:18:22.092] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:18:23.163] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:18:23.476] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:19:32.123] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:19:32.138] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:19:32.138] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:19:32.154] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:19:32.185] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:19:32.373] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:19:32.373] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:19:32.388] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:19:33.462] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:19:33.780] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:21:15.590] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:21:15.590] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:21:15.590] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:21:15.621] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:21:15.637] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:21:15.856] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:21:15.856] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:21:15.871] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:21:16.949] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:21:17.340] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@6d6d2c 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@3cd732 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@d822dc 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@b8589a 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@1b744ec 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@17a92af 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@a3839e 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@b76858 
+INFO   [21:21:17.815] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@13cce46 
+INFO   [21:22:35.444] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:22:35.460] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:22:35.460] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:22:35.491] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+WARN   [21:22:35.506] [main] o.r.Reflections -  given scan urls are empty. set urls in the configuration 
+INFO   [21:22:35.741] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:22:35.741] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:22:35.756] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:22:36.826] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:22:37.201] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@707df8 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@c76d6e 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@702c26 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@156f93a 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@3ed455 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@1bb74e1 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@6d6d2c 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@3cd732 
+INFO   [21:22:37.635] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@d822dc 
+INFO   [21:23:42.773] [main] liquibase -  Successfully acquired change log lock 
+INFO   [21:23:43.538] [main] liquibase -  Creating database history table with name: PUBLIC.DATABASECHANGELOG 
+INFO   [21:23:43.554] [main] liquibase -  Reading from PUBLIC.DATABASECHANGELOG 
+INFO   [21:23:43.563] [main] liquibase -  migrations.xml: migrations.xml::1::frankche88: Table customer created 
+INFO   [21:23:43.563] [main] liquibase -  migrations.xml: migrations.xml::1::frankche88: Index IX_customer_last_first_name created 
+INFO   [21:23:43.563] [main] liquibase -  migrations.xml: migrations.xml::1::frankche88: ChangeSet migrations.xml::1::frankche88 ran successfully in 0ms 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::2::frankche88: Table project created 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::2::frankche88: Index IX_project_customer_id created 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::2::frankche88: Index UQ_project_number created 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::2::frankche88: Foreign key constraint added to project (customer_id) 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::2::frankche88: ChangeSet migrations.xml::2::frankche88 ran successfully in 0ms 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::3::frankche88: Table users created 
+INFO   [21:23:43.579] [main] liquibase -  migrations.xml: migrations.xml::3::frankche88: ChangeSet migrations.xml::3::frankche88 ran successfully in 0ms 
+INFO   [21:23:43.594] [main] liquibase -  Successfully released change log lock 

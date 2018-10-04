@@ -6,13 +6,11 @@ import com.google.inject.AbstractModule;
 
 import banking.customers.infrastructure.hibernate.repository.CustomerHibernateRepository;
 import banking.security.infrastructure.hibernate.repository.UserHibernateRepository;
-import banking.security.infrastructure.hibernate.repository.UserRoleHibernateRepository;
 import project.bundles.HbnBundle;
 import project.customers.domain.repository.CustomerRepository;
 import project.project.domain.repository.ProyectRepository;
 import project.project.infrastructure.hibernate.repository.ProjectHibernateRepository;
 import project.security.domain.repository.UserRepository;
-import project.security.domain.repository.UserRoleRepository;
 
 public class HbnModule extends AbstractModule {
 
@@ -32,7 +30,6 @@ public class HbnModule extends AbstractModule {
         
         bind(UserRepository.class).to(UserHibernateRepository.class);
         
-        bind(UserRoleRepository.class).to(UserRoleHibernateRepository.class);
     }
 
 }
