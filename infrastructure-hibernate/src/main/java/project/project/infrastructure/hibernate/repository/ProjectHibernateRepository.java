@@ -5,12 +5,12 @@ import javax.inject.Singleton;
 
 import banking.common.infrastructure.hibernate.repository.BaseHibernateRepository;
 import project.project.domain.entity.Project;
-import project.project.domain.repository.ProyectRepository;
+import project.project.domain.repository.ProjectRepository;
 
 @Named
 @Singleton
 public class ProjectHibernateRepository extends BaseHibernateRepository<Project>
-		implements ProyectRepository {
+		implements ProjectRepository {
 
 	
 

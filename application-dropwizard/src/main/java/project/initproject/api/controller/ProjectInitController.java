@@ -22,7 +22,7 @@ import project.security.domain.entity.User;
 
 @Path("/api")
 @PermitAll
-@Api(value = "/api/project")
+@Api(value = "/api/signup")
 public class ProjectInitController {
 	
 

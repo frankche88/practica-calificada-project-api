@@ -8,7 +8,7 @@ import banking.customers.infrastructure.hibernate.repository.CustomerHibernateRe
 import banking.security.infrastructure.hibernate.repository.UserHibernateRepository;
 import project.bundles.HbnBundle;
 import project.customers.domain.repository.CustomerRepository;
-import project.project.domain.repository.ProyectRepository;
+import project.project.domain.repository.ProjectRepository;
 import project.project.infrastructure.hibernate.repository.ProjectHibernateRepository;
 import project.security.domain.repository.UserRepository;
 
@@ -24,7 +24,7 @@ public class HbnModule extends AbstractModule {
     protected void configure() {
         bind(SessionFactory.class).toInstance(hbnBundle.getSessionFactory());
         
-        bind(ProyectRepository.class).to(ProjectHibernateRepository.class);
+        bind(ProjectRepository.class).to(ProjectHibernateRepository.class);
         
         bind(CustomerRepository.class).to(CustomerHibernateRepository.class);
         

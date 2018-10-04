@@ -3,23 +3,41 @@ package project.initproject.domain.service;
 import static project.common.application.Messages.INVALID_PROJECT;
 import static project.common.application.Messages.USER_MISSING;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 
 import project.common.application.Notification;
 import project.customers.domain.entity.Customer;
 import project.project.domain.entity.Project;
+import project.project.domain.repository.ProjectRepository;
 import project.security.domain.entity.User;
+import project.security.domain.repository.UserRepository;
 
 @Named
 public class InitProjectDomainService {
-	public void signup(Project originAccount, Customer destinationAccount, User amount)
+	
+	@Inject
+	private ProjectRepository projectRepository;
+	
+	@Inject
+	private UserRepository userRepository;
+	
+	public void signup(Project project, Customer customer, User user)
 			throws IllegalArgumentException {
-		Notification notification = this.validation(originAccount, destinationAccount, amount);
+		Notification notification = this.validation(project, customer, user);
         if (notification.hasErrors()) {
             throw new IllegalArgumentException(notification.errorMessage());
         }
         
         //TODO: SAVE PROJECT AND USER
+        
+        project.setCustomer(customer);
+        
+        
+        projectRepository.save(project);
+        
+        userRepository.save(user);
+        
 		
 	}
 	
