@@ -600,3 +600,42 @@ INFO   [21:50:08.638] [main] o.e.j.s.AbstractConnector -  Started application@b9
 INFO   [21:50:08.638] [main] o.e.j.s.AbstractConnector -  Started admin@4e60f5{HTTP/1.1,[http/1.1]}{0.0.0.0:8081} 
 INFO   [21:50:08.638] [main] o.e.j.s.Server -  Started @5796ms 
 INFO   [21:50:29.220] [dw-19 - GET /swagger.json] o.r.Reflections -  Reflections took 8 ms to scan 1 urls, producing 24 keys and 24 values  
+INFO   [21:54:13.589] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:54:13.589] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:54:13.605] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [21:54:13.620] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-oauth2-connect for path /oauth2-redirect.html/* 
+INFO   [21:54:13.714] [main] o.r.Reflections -  Reflections took 47 ms to scan 1 urls, producing 24 keys and 24 values  
+INFO   [21:54:13.989] [main] o.h.Version -  HHH000412: Hibernate Core {5.2.15.Final} 
+INFO   [21:54:13.989] [main] o.h.c.Environment -  HHH000206: hibernate.properties not found 
+INFO   [21:54:14.004] [main] i.d.h.SessionFactoryFactory -  Entity classes: [] 
+INFO   [21:54:15.075] [main] o.h.a.c.Version -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+INFO   [21:54:15.450] [main] o.h.d.Dialect -  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@6fedfa 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@7d0c9f 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@11a901d 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@1bdab37 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@484c7 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f6cac 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@18a8584 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@1127611 
+INFO   [21:54:15.916] [main] o.h.t.BasicTypeRegistry -  HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@13ce348 
+INFO   [21:54:16.495] [main] i.d.s.ServerFactory -  Starting project-api 
+INFO   [21:54:16.578] [main] o.e.j.s.SetUIDListener -  Opened application@b9c735{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [21:54:16.578] [main] o.e.j.s.SetUIDListener -  Opened admin@4e60f5{HTTP/1.1,[http/1.1]}{0.0.0.0:8081} 
+INFO   [21:54:16.578] [main] o.e.j.s.Server -  jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_181-b13 
+INFO   [21:54:17.172] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    POST    /api/signup (project.initproject.api.controller.ProjectInitController)
+    GET     /swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /swagger.{type:json|yaml} (io.swagger.jaxrs.listing.ApiListingResource)
+ 
+INFO   [21:54:17.172] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@9971af{/,null,AVAILABLE} 
+INFO   [21:54:17.172] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+INFO   [21:54:17.188] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@1cf0c15{/,null,AVAILABLE} 
+INFO   [21:54:17.188] [main] o.e.j.s.AbstractConnector -  Started application@b9c735{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [21:54:17.203] [main] o.e.j.s.AbstractConnector -  Started admin@4e60f5{HTTP/1.1,[http/1.1]}{0.0.0.0:8081} 
+INFO   [21:54:17.203] [main] o.e.j.s.Server -  Started @5692ms 
