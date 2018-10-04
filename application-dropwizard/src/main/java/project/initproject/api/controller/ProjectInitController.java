@@ -9,6 +9,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import io.dropwizard.hibernate.UnitOfWork;
 import io.swagger.annotations.Api;
 import project.common.api.controller.ResponseHandler;
@@ -24,6 +27,8 @@ import project.security.domain.entity.User;
 @PermitAll
 @Api(value = "/api/signup")
 public class ProjectInitController {
+	
+	Logger logger = LoggerFactory.getLogger(ProjectInitController.class);
 	
 
 	@Inject
@@ -45,6 +50,8 @@ public class ProjectInitController {
 	@UnitOfWork
 	public Response signup(ProjectInitDto projectInitDto) throws Exception {
 		try {
+			
+			logger.info("Proyecto: " + projectInitDto);
 			
 			Project project = projectDtoMapper.reverseMapper(projectInitDto.getProject());
 			
